@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --perspective-size: 1rem;
+}
+
+html {
+    font-family: Poppins;
+    color-scheme: dark;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #111;
+}
+
+.start-content {
+    position: absolute;
+    flex-grow: 1;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    background: #111;
+    user-select: none;
+    z-index: 100;
+    transition: .5s ease-in-out opacity;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-size: 1.2em;
+    transform-style: preserve-3d;
+    scale: 150;
+    transform:
+        perspective(var(--perspective-size))
+        rotateY(calc((1turn / var(--size)) * (var(--one))));
+}
+
+.main-content.animation {
+    animation-duration: calc(var(--duration) / 2 * 1ms);
+    animation-fill-mode: forwards;
+}
+
+.main-content.animation-1 {
+    animation-name: animate1;
+}
+
+.main-content.animation-2 {
+    animation-name: animate2;
+}
+
+.main-content.animation-3 {
+    animation-name: animate3;
+}
+
+.main-content.animation-4 {
+    animation-name: animate4;
+}
+
+.main-content.animation-5 {
+    animation-name: animate5;
+}
+
+.main-content.animation-6 {
+    animation-name: animate6;
+}
+
+.main-content.animation-7 {
+    animation-name: animate7;
+}
+
+.main-content.animation-8 {
+    animation-name: animate8;
+}
+
+.main-content.animation-9 {
+    animation-name: animate9;
+}
+
+.main-content.animation-10 {
+    animation-name: animate10;
+}
+
+.img {
+    position: absolute;
+    height: 90vh;
+    width: 80vw;
+    border-radius: 1em;
+    opacity: .5;
+    overflow: hidden;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc((1turn / var(--size)) * var(--i) + 0deg)) translateZ(-130vw);
+}
+
+.img img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.text-container {
+    position: absolute;
+    max-width: 80vw;
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 2em;
+    font-family: Satisfy;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .3em;
+}
+
+.text-container .word, .text-container .word .letter {
+    position: relative;
+    display: inline-block;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none !important;
+}
+
+@keyframes animate1 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one))));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 1)));
+    }
+}
+
+@keyframes animate2 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 1)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 2)));
+    }
+}
+
+@keyframes animate3 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 2)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 3)));
+    }
+}
+
+@keyframes animate4 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 3)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 4)));
+    }
+}
+
+@keyframes animate5 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 4)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 5)));
+    }
+}
+
+@keyframes animate6 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 5)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 6)));
+    }
+}
+
+@keyframes animate7 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 6)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 7)));
+    }
+}
+
+@keyframes animate8 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 7)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 8)));
+    }
+}
+
+@keyframes animate9 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 8)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 9)));
+    }
+}
+
+@keyframes animate10 {
+    from {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 9)));
+    }
+    to {
+        transform:
+            perspective(var(--perspective-size))
+            rotateY(calc((1turn / var(--size)) * (var(--one) + 10)));
+    }
+}
